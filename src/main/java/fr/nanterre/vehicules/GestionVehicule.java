@@ -2,7 +2,7 @@ package fr.nanterre.vehicules;
 import java.util.ArrayList;
 import java.util.List;
 public class GestionVehicule {
-static final String VERSION = "0.4.0";
+static final String VERSION = "0.5.0";
 public static void main(String[] args) {
 System.out.println("Gestion de véhicules - VERSION CASSÉE - v" + VERSION);
 List<Vehicule> parc = new ArrayList<>();
