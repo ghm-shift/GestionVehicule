@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 class RechercherVehiculeTest {
+// cas de base
 @Test
 void rechercherTrouveLeVehicule() {
 List<Vehicule> parc = new ArrayList<>();
