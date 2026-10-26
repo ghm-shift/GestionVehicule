@@ -16,4 +16,11 @@ void modifierVehiculeAbsentRenvoieFalse() {
 List<Vehicule> parc = new ArrayList<>();
 assertFalse(ModifierVehicule.modifier(parc, "ZZ-999-ZZ", "Fiat", "500", 2020));
 }
+@Test
+void doublonEnMinusculesRefuse() {
+List<Vehicule> parc = new ArrayList<>();
+AjoutVehicule.ajouter(parc, new Vehicule("AB-123-CD", "Renault", "Clio", 2021));
+assertFalse(AjoutVehicule.ajouter(parc, new Vehicule("ab-123-cd", "Renault",
+"Clio", 2021)));
+}
 }
