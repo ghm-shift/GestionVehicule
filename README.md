@@ -10,3 +10,4 @@ Pour activer les vérifications automatiques (tests et messages de commit) :
 git config core.hooksPath .githooks
 ```
 Recherche de vehicule en cours...
+Voir aussi : git lg
