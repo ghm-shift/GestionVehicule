@@ -8,7 +8,7 @@ class ModifierVehiculeTest {
 void modifierChangeLeModele() {
 List<Vehicule> parc = new ArrayList<>();
 parc.add(new Vehicule("EF-456-GH", "Peugeot", "208", 2019));
-assertTrue(ModifierVehicule.modifier(parc, "EF-456-GH", "Peugeot", "308", 2022));
+assertTrue(ModifierVehicule.modifier(parc, "EF-456-GH", "Peugeot", "309", 2022));
 assertEquals("308", parc.get(0).getModele());
 }
 @Test
