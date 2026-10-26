@@ -1,0 +1,6 @@
+#!/bin/sh
+./test.sh
+if [ $? -ne 0 ]; then
+    echo "Tests en échec. Commit refusé."
+    exit 1
+fi
