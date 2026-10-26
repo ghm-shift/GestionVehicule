@@ -11,3 +11,7 @@ git config core.hooksPath .githooks
 ```
 Recherche de vehicule en cours...
 Voir aussi : git lg
+## Compiler
+javac -d out $(find src/main -name "*.java")
+## Compiler
+javac -d out $(find src/main -name "*.java")
