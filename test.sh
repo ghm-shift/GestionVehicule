@@ -1,8 +1,9 @@
 #!/bin/sh
-# Compile le code et les tests, puis lance les tests JUnit
 
 if [ -f "/usr/share/java/junit-platform-console-standalone.jar" ]; then
     JUNIT="/usr/share/java/junit-platform-console-standalone.jar"
+elif [ -f "/usr/local/share/java/junit-platform-console-standalone.jar" ]; then
+    JUNIT="/usr/local/share/java/junit-platform-console-standalone.jar"
 elif [ -f "./junit-platform-console-standalone-1.10.2.jar" ]; then
     JUNIT="./junit-platform-console-standalone-1.10.2.jar"
 else
