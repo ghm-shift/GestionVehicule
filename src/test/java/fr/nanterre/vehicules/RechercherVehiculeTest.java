@@ -11,4 +11,9 @@ List<Vehicule> parc = new ArrayList<>();
 parc.add(new Vehicule("AB-123-CD", "Renault", "Clio", 2021));
 assertEquals("Clio", RechercherVehicule.rechercher(parc, "AB-123-CD").getModele());
 }
+@Test
+void rechercherAbsentRenvoieNull() {
+    List<Vehicule> parc = new ArrayList<>();
+    assertNull(RechercherVehicule.rechercher(parc,"ZZ-999-ZZ"));
+}
 }
