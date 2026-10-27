@@ -15,3 +15,4 @@ Voir aussi : git lg
 javac -d out $(find src/main -name "*.java")
 ## Compiler
 javac -d out $(find src/main -name "*.java")
+Validation automatique par Jenkins
