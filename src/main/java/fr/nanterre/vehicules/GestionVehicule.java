@@ -2,7 +2,7 @@ package fr.nanterre.vehicules;
 import java.util.ArrayList;
 import java.util.List;
 public class GestionVehicule {
-static final String VERSION = "0.7.1";
+static final String VERSION = "0.8.0";
 public static void main(String[] args) {
 System.out.println("Gestion de véhicules - Parc de Nanterre (stable) - v" + VERSION);
 List<Vehicule> parc = new ArrayList<>();
