@@ -1,5 +1,8 @@
 pipeline {
 agent any
+environment {
+    PATH = "/usr/local/bin:/opt/homebrew/bin:/Applications/Docker.app/Contents/Resources/bin:${env.PATH}"
+  }
 stages {
 stage('Informations Git') {
 steps { sh 'git log -1 --oneline' }
